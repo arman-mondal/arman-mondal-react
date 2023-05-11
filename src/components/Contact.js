@@ -1,7 +1,7 @@
 import React from "react";
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 const Contact = () => {
-   
+   document.title = "Contact Me";
   return (
     <div className="bg-blend-screen 	h-screen justify-center flex items-center " >
 
@@ -27,7 +27,7 @@ const Contact = () => {
 
 </div>
 
-<form action="http://localhost:3000/submit-form" method="POST" >
+<form action="https://api-ch80.onrender.com/submit-form" method="POST" >
 <input type="text" name="name" placeholder="Enter Your Name"  required="" className="input input-bordered mt-2 ml-2 mr-2 input-error w-full max-w-xs" />
 <input type="text" name="email" placeholder="Enter Your Email" required="" className="input input-bordered m-2 input-success w-full max-w-xs" />
 <textarea  name="messages" className="textarea m-2 w-full textarea-secondary" required="" placeholder="Message"></textarea>

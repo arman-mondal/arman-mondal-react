@@ -1,5 +1,6 @@
 import React from "react";
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
+document.title = "Arman Mondal";
 const Profile = () => {
     
   return (

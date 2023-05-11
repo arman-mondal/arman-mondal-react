@@ -5,26 +5,34 @@ import Navbar from "./Navbar";
 import Profile from "./Profile";
 import axios from "axios";
 import Contact from "./Contact";
+import Animate from "./animte";
 
 
 
 const Home = () => {
 
-
-
   
     
     const [showComponent1, setShowComponent1] = useState(true);
   const [showComponent2, setShowComponent2] = useState(false);
+  const [showComponent3, setShowComponent3] = useState(false);
 
   const handleClick1 = () => {
     setShowComponent1(false);
     setShowComponent2(true);
+    setShowComponent3(false);
+  }
+  
+  const handleClick3 = () => {
+    setShowComponent1(false);
+    setShowComponent2(false);
+    setShowComponent3(true);
   }
 
   const handleClick2 = () => {
     setShowComponent1(true);
     setShowComponent2(false);
+    setShowComponent3(false);
   }
   return (
     <div className="w-full h-screen" >
@@ -43,7 +51,7 @@ const Home = () => {
             <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
           </a>
           <ul className="p-2">
-            <li><a>Insta Downloader</a></li>
+            <li><a onClick={handleClick3} >Insta Downloader</a></li>
             <li><a>Comming Soon</a></li>
           </ul>
         </li>
@@ -71,7 +79,7 @@ const Home = () => {
           <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
         </a>
         <ul className="p-2">
-        <li><a>Insta Downloader</a></li>
+        <li><a onClick={handleClick3}>Insta Downloader</a></li>
             <li><a>Comming Soon</a></li>
         </ul>
       </li>
@@ -93,7 +101,9 @@ const Home = () => {
     </div>
     {showComponent1 && <Profile />}
       {showComponent2 && <Contact />}
+{showComponent3 && <Animate/>
 
+}
     </div>
   );
 };
