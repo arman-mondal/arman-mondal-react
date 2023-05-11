@@ -27,7 +27,7 @@ const Contact = () => {
 
 </div>
 
-<form action="http://localhost:3000/submit-form" method="POST" >
+<form action="http://64.227.146.2:3000/submit-form" method="POST" >
 <input type="text" name="name" placeholder="Enter Your Name"  required="" className="input input-bordered mt-2 ml-2 mr-2 input-error w-full max-w-xs" />
 <input type="text" name="email" placeholder="Enter Your Email" required="" className="input input-bordered m-2 input-success w-full max-w-xs" />
 <textarea  name="messages" className="textarea m-2 w-full textarea-secondary" required="" placeholder="Message"></textarea>
