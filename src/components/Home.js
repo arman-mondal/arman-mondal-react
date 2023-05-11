@@ -79,7 +79,7 @@ const Home = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Buy Me a Coffee
+    <a href="https://paytm.me/hj-Uxp7" className="btn">Buy Me a Coffee
     <Player className="mb-5" 
     autoplay
     loop
