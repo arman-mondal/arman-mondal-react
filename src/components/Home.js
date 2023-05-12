@@ -8,12 +8,6 @@ import Profile from "./Profile";
 
 
 const Home = () => {
-
-  
-
-
-
-
  const sc="https://github.com/arman-mondal/arman-mondal-react"  ;
 
  function codes() {
