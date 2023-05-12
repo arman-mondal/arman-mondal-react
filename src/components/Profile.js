@@ -1,8 +1,18 @@
 import React from "react";
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
-document.title = "Arman Mondal";
+
 const Profile = () => {
     
+  setInterval(function newfunc() {
+      
+    document.getElementById("dp").click();
+   
+       }, 4000)
+     
+      
+  
+
+
   return (
    <div className="bg-blend-screen 	h-screen justify-center flex items-center " >
 
@@ -10,8 +20,8 @@ const Profile = () => {
    
   <div className="card-body  h-max	">
   
-  <label className="swap swap-flip text-9xl">
-<input type="checkbox" />
+  <label  id="dp" className="swap swap-flip text-9xl">
+<input id="dp" type="checkbox" />
   
   <div className="swap-on"> <div className="avatar drop-shadow-2xl		 justify-center ">
   <div className="w-24 justify-center drop-shadow-2xl		 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
